@@ -1,0 +1,19 @@
+package br.com.algamoney.api.model;
+
+import javax.annotation.Generated;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.StaticMetamodel;
+
+/**
+ *
+ * @author anderson.aristides
+ *
+ */
+@Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
+@StaticMetamodel(Categoria.class)
+public abstract class Categoria_ {
+
+    public static volatile SingularAttribute<Categoria, Long> codigo;
+    public static volatile SingularAttribute<Categoria, String> nome;
+
+}
