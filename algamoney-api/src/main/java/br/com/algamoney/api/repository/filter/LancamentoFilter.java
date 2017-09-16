@@ -2,6 +2,7 @@ package br.com.algamoney.api.repository.filter;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
@@ -9,7 +10,9 @@ import java.time.LocalDate;
  * @author anderson.aristides
  *
  */
-public class LancamentoFilter {
+public class LancamentoFilter implements Serializable {
+
+    private static final long serialVersionUID = 9035348120341448087L;
 
     private String descricao;
 

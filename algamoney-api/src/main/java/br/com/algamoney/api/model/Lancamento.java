@@ -4,6 +4,7 @@ import br.com.algamoney.api.model.enums.TipoLancamento;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -14,7 +15,9 @@ import java.time.LocalDate;
  */
 @Entity
 @Table(name = "lancamento")
-public class Lancamento {
+public class Lancamento implements Serializable {
+
+    private static final long serialVersionUID = 3412702209650366278L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
